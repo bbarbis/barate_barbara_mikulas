@@ -77,13 +77,19 @@ article{
     grid-area: a;
     box-sizing: border-box;
 }
+h3{
+    color: #ff1a1a;
+}
 p{
-    font-size: 10px;
+    font-size: 15px;
 }
 .kep3{
-
+float: right;
 }
 footer{
     grid-area: f;
     box-sizing: border-box;
+    background-color: red;
+    text-align: center;
+    height: 20px;
 }
