@@ -1,0 +1,84 @@
+body{
+background-image: url(kepek/hatter.jpg);
+}
+main{
+    grid-template-columns: "h h"
+    "n n"
+    "as as"
+    "a a"
+    "f f";
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    background-color: rgb(255,255,230);
+}
+header{
+    display: grid;
+    grid-template-columns: (2, 1fr);
+    grid-area: h;
+    box-sizing: border-box;
+    background-image: url(kepek/fejlec.jpg);
+    opacity: 0.8;
+    height: 550px;
+    margin-top: 60px;
+    
+}
+h1{
+    color: red;
+    font-family: cursive;
+    text-align: center;
+}
+nav{
+    grid-area: n;
+    display: grid;
+    grid-template-columns: (2, 1fr);
+    box-sizing: border-box;
+    background-color: red;
+    height: 50px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+aside{
+    grid-area: as;
+    box-sizing: border-box;
+}
+.kep1{
+    width: 100%;
+    border: 1px solid red;
+}
+.kep2{
+    width: 100%;
+}
+
+article{
+    grid-area: a;
+    box-sizing: border-box;
+}
+.kep3{
+
+}
+footer{
+    grid-area: f;
+    box-sizing: border-box;
+}
