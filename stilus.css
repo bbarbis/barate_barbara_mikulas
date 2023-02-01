@@ -2,7 +2,8 @@ body{
 background-image: url(kepek/hatter.jpg);
 }
 main{
-    grid-template-columns: "h h"
+    display: grid;
+    grid-template-areas:  "h h"
     "n n"
     "as as"
     "a a"
@@ -13,7 +14,7 @@ main{
     background-color: rgb(255,255,230);
 }
 header{
-    display: grid;
+    display: block;
     grid-template-columns: (2, 1fr);
     grid-area: h;
     box-sizing: border-box;
@@ -30,6 +31,7 @@ h1{
     text-align: center;
 }
 nav{
+    display: block;
     grid-area: n;
     display: grid;
     grid-template-columns: (2, 1fr);
@@ -48,6 +50,7 @@ ul {
   
   li {
     float: left;
+    border-bottom: 1px solid rgb(255, 255, 255);
   }
   
   li a {
@@ -61,7 +64,11 @@ ul {
   li a:hover {
     background-color: green;
   }
+  ul li{
+   
+}
 aside{
+    display: block;
     grid-area: as;
     box-sizing: border-box;
 }
@@ -77,6 +84,7 @@ aside{
 }
 
 article{
+    display: block;
     grid-area: a;
     box-sizing: border-box;
 }
@@ -90,6 +98,7 @@ p{
 float: right;
 }
 footer{
+    display: block;
     grid-area: f;
     box-sizing: border-box;
     background-color: red;
