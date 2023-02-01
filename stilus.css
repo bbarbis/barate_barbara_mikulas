@@ -68,9 +68,12 @@ aside{
 .kep1{
     width: 100%;
     border: 1px solid red;
+    gap: 10px;
 }
 .kep2{
     width: 100%;
+    border: 1px solid red;
+    gap: 10px;
 }
 
 article{
